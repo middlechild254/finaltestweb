@@ -1,0 +1,286 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  background-color: #f8fdf9;
+  line-height: 1.6;
+}
+
+/* ===============================
+   HEADER & NAVIGATION
+   =============================== */
+header {
+  background-color: #0a7d36;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffe77a;
+}
+
+.user-greeting {
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  
+}
+
+
+
+/* ===============================
+   HERO SECTION
+   =============================== */
+.hero {
+  background: linear-gradient(rgba(10, 125, 54, 0.85), rgba(10, 125, 54, 0.7)),
+    url('https://images.unsplash.com/photo-1581091870622-3d93e5f6d1b0?auto=format&fit=crop&w=1600&q=80')
+    center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.btn {
+  background-color: #ffe77a;
+  color: #0a7d36;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+
+
+/* ===============================
+   SECTIONS GENERAL
+   =============================== */
+section {
+  padding: 3rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h2 {
+  color: #0a7d36;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.section-intro {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ===============================
+   CHAMAS SECTION
+   =============================== */
+.chamas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.chama-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.chama-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.chama-card h3 {
+  color: #0a7d36;
+  margin-bottom: 0.5rem;
+}
+
+.chama-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight {
+  display: inline-block;
+  font-size: 0.85rem;
+  color: #168d4e;
+  background: #eaf8f0;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+}
+
+
+
+
+
+/* ===============================
+   SAVINGS & LOANS
+   =============================== */
+.savings,
+.loans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.info-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+  color: #0a7d36;
+  margin-bottom: 0.6rem;
+}
+
+.info-card p {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.info-card a {
+  text-decoration: none;
+  color: #168d4e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.info-card a:hover {
+  color: #0a7d36;
+}
+
+
+
+
+  /* Overview Cards Grid */
+    .overview-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    
+    /* Card Styling */
+    .overview-card {
+      background: #fff;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .overview-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+     .card-icon {
+      font-size: 2.5rem;
+      color: #0a7d36;
+    }
+
+     .card-info h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+      color: #0a7d36;
+    }
+
+     .card-number {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-bottom: 0.2rem;
+      color: #168d4e;
+    }
+
+    .card-info small {
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .overview-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+
+
+
+
+
+
+
